@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "../components/header";
 
@@ -335,27 +336,27 @@ export default function NosotrosPage() {
 
           <div className="mt-12 grid gap-4 md:grid-cols-6">
             <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <img src="/logos/ebu.png" alt="Logo EBU - Cliente Radiast" className="h-20 object-contain" />
+              <Image src="/logos/ebu.png" alt="Logo EBU - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
             </article>
 
             <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <img src="/logos/nibol.png" alt="Logo NIBOL - Cliente Radiast" className="h-20 object-contain" />
+              <Image src="/logos/nibol.png" alt="Logo NIBOL - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
             </article>
 
             <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <img src="/logos/salus.png" alt="Logo SALUS - Cliente Radiast" className="h-20 object-contain" />
+              <Image src="/logos/salus.png" alt="Logo SALUS - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
             </article>
 
             <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <img src="/logos/guabira.png" alt="Logo GUABIRA - Cliente Radiast" className="h-20 object-contain" />
+              <Image src="/logos/guabira.png" alt="Logo GUABIRA - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
             </article>
 
             <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <img src="/logos/guabira2.png" alt="Logo GUABIRA 2 - Cliente Radiast" className="h-20 object-contain" />
+              <Image src="/logos/guabira2.png" alt="Logo GUABIRA 2 - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
             </article>
 
             <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <img src="/logos/tata.png" alt="Logo TATA - Cliente Radiast" className="h-20 object-contain" />
+              <Image src="/logos/tata.png" alt="Logo TATA - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
             </article>
           </div>
         </div>
@@ -413,9 +414,13 @@ export default function NosotrosPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-10 md:grid-cols-4">
             <div className="space-y-4">
-              <div className="font-display text-xl font-semibold text-white">
-                RADIAST
-              </div>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="text-sm leading-6 text-slate-400">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -432,9 +437,9 @@ export default function NosotrosPage() {
               </div>
               <ul className="space-y-2 text-sm text-slate-400">
                 <li>
-                  <a className="transition hover:text-white" href="/">
+                  <Link className="transition hover:text-white" href="/">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="transition hover:text-white" href="/nosotros">
@@ -442,9 +447,9 @@ export default function NosotrosPage() {
                   </a>
                 </li>
                 <li>
-                  <a className="transition hover:text-white" href="/#servicios">
+                  <Link className="transition hover:text-white" href="/#servicios">
                     Servicios
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="transition hover:text-white" href="/contacto">

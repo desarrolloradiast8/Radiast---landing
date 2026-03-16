@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "../components/header";
 import ContactFormWrapper from "./contact-form-wrapper";
@@ -240,7 +241,13 @@ export default function ContactoPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -279,9 +286,9 @@ export default function ContactoPage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">

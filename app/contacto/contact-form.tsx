@@ -5,17 +5,18 @@ import { useEffect, useState } from "react";
 
 export default function ContactForm() {
   const searchParams = useSearchParams();
-  const [showMessage, setShowMessage] = useState(false);
   const enviado = searchParams.get("enviado");
   const error = searchParams.get("error");
+  const [showMessage, setShowMessage] = useState(() => Boolean(enviado || error));
 
   useEffect(() => {
-    if (enviado || error) {
-      setShowMessage(true);
-      const timer = setTimeout(() => setShowMessage(false), 5000);
-      return () => clearTimeout(timer);
+    if (!showMessage) {
+      return;
     }
-  }, [enviado, error]);
+
+    const timer = setTimeout(() => setShowMessage(false), 5000);
+    return () => clearTimeout(timer);
+  }, [showMessage]);
 
   return (
     <>

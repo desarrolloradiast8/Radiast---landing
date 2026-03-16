@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Header from "../../components/header";
 
 export const metadata: Metadata = {
@@ -18,9 +20,9 @@ export default function ConsultoriaPage() {
       <section className="bg-[#193864] text-white">
         <div className="mx-auto w-full max-w-440 px-6 py-2.5 md:px-10">
           <nav className="flex items-center gap-2 text-xs font-semibold md:text-sm">
-            <a className="hover:text-[#9dc6ff]" href="/">
+            <Link className="hover:text-[#9dc6ff]" href="/">
               Inicio
-            </a>
+            </Link>
             <span className="text-white/70">›</span>
             <a className="hover:text-[#9dc6ff]" href="/servicios">
               Servicios
@@ -50,7 +52,7 @@ export default function ConsultoriaPage() {
               <br />
               Empresarial
             </h1>
-            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#17356a] md:text-xl md:leading-tight">
+            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-black md:text-xl md:leading-tight">
               Estrategia tecnológica alineada al negocio para empresas medianas y grandes.
             </p>
           </div>
@@ -59,16 +61,95 @@ export default function ConsultoriaPage() {
 
       <section className="bg-[#e9eef5]">
         <div className="mx-auto w-full max-w-440 px-6 py-14 md:px-10 md:py-16">
-          <div className="mx-auto max-w-200">
-            <h2 className="text-center text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
-              Sobre este servicio
-            </h2>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              En RADIAST brindamos servicios de consultoría en transformación digital para empresas, diseñando estrategias tecnológicas alineadas a los objetivos empresariales. Analizamos procesos, estructuras operativas y sistemas actuales para crear un roadmap digital que permita optimizar recursos, reducir riesgos y preparar la organización para la automatización, inteligencia artificial y escalabilidad tecnológica.
-            </p>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Trabajamos con gerencias generales, áreas financieras y equipos de tecnología para garantizar una transformación digital estructurada y medible.
-            </p>
+          <h2 className="text-center text-xl font-semibold text-[#193356] mb-12 md:text-3xl md:leading-none">
+            Sobre este servicio
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 [&>article]:transition [&>article]:duration-300 [&>article]:ease-out [&>article:hover]:-translate-y-2 [&>article:hover]:shadow-xl [&>article:hover]:shadow-sky-100/80">
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Diagnóstico de procesos y tecnología
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Evaluamos procesos, sistemas actuales y oportunidades de digitalización
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Diseño de estrategia de transformación digital
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Definimos el roadmap tecnológico alineado a los objetivos de negocio
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Optimización de procesos empresariales
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Identificamos oportunidades para simplificar procesos y mejorar operativa
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Preparación para automatización e inteligencia artificial
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Diseñamos la arquitectura para implementar automatización e IA aplicada
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Acompañamiento en la implementación tecnológica
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Trabajamos con gerencias para asegurar soluciones alineadas estratégicamente
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Medición de resultados y mejora continua
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Definimos indicadores para medir impacto y facilitar mejora continua
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -195,7 +276,13 @@ export default function ConsultoriaPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -234,9 +321,9 @@ export default function ConsultoriaPage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Header from "../../components/header";
 
 export const metadata: Metadata = {
@@ -19,9 +20,9 @@ export default function BusinessIntelligencePage() {
       <section className="bg-[#193864] text-white">
         <div className="mx-auto w-full max-w-440 px-6 py-2.5 md:px-10">
           <nav className="flex items-center gap-2 text-xs font-semibold md:text-sm">
-            <a className="hover:text-[#9dc6ff]" href="/">
+            <Link className="hover:text-[#9dc6ff]" href="/">
               Inicio
-            </a>
+            </Link>
             <span className="text-white/70">›</span>
             <a className="hover:text-[#9dc6ff]" href="/servicios">
               Servicios
@@ -48,7 +49,7 @@ export default function BusinessIntelligencePage() {
               <br />
               Analítica Empresarial
             </h1>
-            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#17356a] md:text-xl md:leading-tight">
+            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-black md:text-xl md:leading-tight">
               Decisiones estratégicas basadas en datos en tiempo real.
             </p>
           </div>
@@ -57,16 +58,95 @@ export default function BusinessIntelligencePage() {
 
       <section className="bg-[#e9eef5]">
         <div className="mx-auto w-full max-w-440 px-6 py-14 md:px-10 md:py-16">
-          <div className="mx-auto max-w-200">
-            <h2 className="text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
-              Sobre este servicio
-            </h2>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Desarrollamos soluciones de Business Intelligence para empresas mediante la implementación de dashboards ejecutivos, análisis de datos y reportes automatizados con herramientas como Power BI. Centralizamos información de múltiples fuentes para generar visibilidad financiera, operativa y comercial.
-            </p>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Convertimos datos dispersos en información estratégica para la toma de decisiones empresariales.
-            </p>
+          <h2 className="text-center text-xl font-semibold text-[#193356] mb-12 md:text-3xl md:leading-none">
+            Sobre este servicio
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 [&>article]:transition [&>article]:duration-300 [&>article]:ease-out [&>article:hover]:-translate-y-2 [&>article:hover]:shadow-xl [&>article:hover]:shadow-sky-100/80">
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Integración y centralización de datos
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Conectamos y consolidamos información proveniente de diferentes sistemas y fuentes empresariales para crear una base de datos unificada y confiable.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Desarrollo de dashboards ejecutivos
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Diseñamos paneles interactivos que permiten visualizar indicadores clave del negocio de forma clara, facilitando el monitoreo financiero, operativo y comercial.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Análisis estratégico de datos
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Transformamos datos empresariales en información útil para identificar tendencias, oportunidades de mejora y apoyar la toma de decisiones estratégicas.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Automatización de reportes empresariales
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Implementamos sistemas de generación automática de reportes que permiten acceder a información actualizada sin procesos manuales.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Implementación de herramientas de Business Intelligence
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Utilizamos plataformas como Power BI para desarrollar soluciones de análisis de datos adaptadas a las necesidades específicas de cada organización.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Toma de decisiones basada en datos
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Convertimos información dispersa en conocimiento estratégico que permita a las empresas mejorar su planificación, control y gestión del negocio.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -193,7 +273,13 @@ export default function BusinessIntelligencePage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -232,9 +318,9 @@ export default function BusinessIntelligencePage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">

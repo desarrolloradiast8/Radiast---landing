@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Header from "../../components/header";
 
 export const metadata: Metadata = {
@@ -18,9 +20,9 @@ export default function IntegracionDeSistemasPage() {
       <section className="bg-[#193864] text-white">
         <div className="mx-auto w-full max-w-440 px-6 py-2.5 md:px-10">
           <nav className="flex items-center gap-2 text-xs font-semibold md:text-sm">
-            <a className="hover:text-[#9dc6ff]" href="/">
+            <Link className="hover:text-[#9dc6ff]" href="/">
               Inicio
-            </a>
+            </Link>
             <span className="text-white/70">›</span>
             <a className="hover:text-[#9dc6ff]" href="/servicios">
               Servicios
@@ -36,7 +38,7 @@ export default function IntegracionDeSistemasPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=2200&q=80')",
+              "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2200&q=80')",
           }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(233,249,252,0.78)_0%,rgba(233,249,252,0.62)_34%,rgba(233,249,252,0.15)_68%,rgba(233,249,252,0.03)_100%)]" />
@@ -48,7 +50,7 @@ export default function IntegracionDeSistemasPage() {
               <br />
               Empresariales
             </h1>
-            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#17356a] md:text-xl md:leading-tight">
+            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-black md:text-xl md:leading-tight">
               Conectamos tus sistemas para un flujo de información eficiente y sin reprocesos.
             </p>
           </div>
@@ -57,16 +59,94 @@ export default function IntegracionDeSistemasPage() {
 
       <section className="bg-[#e9eef5]">
         <div className="mx-auto w-full max-w-440 px-6 py-14 md:px-10 md:py-16">
-          <div className="mx-auto max-w-200">
-            <h2 className="text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
-              Sobre este servicio
-            </h2>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Integramos plataformas empresariales como ERP, CRM, sistemas contables y aplicaciones cloud para garantizar sincronización de datos y automatización de procesos. Eliminamos duplicidad de información y mejoramos el control operativo mediante integración tecnológica estructurada.
-            </p>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Transformamos sistemas aislados en un ecosistema digital unificado que potencia la eficiencia operativa.
-            </p>
+          <h2 className="text-center text-xl font-semibold text-[#193356] mb-12 md:text-3xl md:leading-none">
+            Sobre este servicio
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 [&>article]:transition [&>article]:duration-300 [&>article]:ease-out [&>article:hover]:-translate-y-2 [&>article:hover]:shadow-xl [&>article:hover]:shadow-sky-100/80">
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Análisis de sistemas empresariales
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Evaluamos las plataformas y sistemas actuales de la empresa para identificar cómo se gestionan los datos y detectar oportunidades de integración y optimización.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Integración de plataformas empresariales
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Conectamos sistemas como ERP, CRM, plataformas contables y aplicaciones cloud para asegurar un flujo de información continuo entre las distintas áreas del negocio.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 12m0 0l-4 4m4-4l4 4" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Sincronización de datos
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Implementamos mecanismos que permiten mantener la información actualizada y consistente entre todos los sistemas, evitando inconsistencias y duplicidad de datos.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Automatización de procesos entre sistemas
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Configuramos integraciones que permiten automatizar procesos operativos entre diferentes plataformas, reduciendo tareas manuales y mejorando la eficiencia.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4v2m0 4v2M12 3a9 9 0 110 18 9 9 0 010-18zm0 2a7 7 0 100 14 7 7 0 000-14z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Eliminación de duplicidad de información
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Centralizamos los datos empresariales para evitar registros duplicados y mejorar la calidad y confiabilidad de la información.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Creación de un ecosistema digital unificado
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Transformamos sistemas aislados en una infraestructura tecnológica conectada que facilita el control operativo, la gestión de información y la eficiencia empresarial.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -183,7 +263,13 @@ export default function IntegracionDeSistemasPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -222,9 +308,9 @@ export default function IntegracionDeSistemasPage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">

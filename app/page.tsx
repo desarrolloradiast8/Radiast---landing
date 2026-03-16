@@ -91,10 +91,10 @@ export default function Home() {
       />
       <Header currentPage="inicio" />
 
-      <main id="inicio" className="relative overflow-hidden">
+      <main id="inicio" className="relative min-h-[calc(100vh-81px)] overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/4050294/pexels-photo-4050294.jpeg?auto=compress&cs=tinysrgb&w=1800')] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,23,42,0.85),rgba(15,23,42,0.55),rgba(15,23,42,0.25))]" />
-        <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-20 md:min-h-155 md:flex-row md:items-center md:py-28">
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,18,43,0.90),rgba(6,18,43,0.80),rgba(6,18,43,0.65))]" />
+        <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-20 md:min-h-[calc(100vh-81px)] md:flex-row md:items-center md:py-28">
           <div className="max-w-2xl">
             <h1 className="font-display text-4xl font-semibold leading-tight text-white md:text-5xl">
               Transformacion Digital y Automatizacion Empresarial
@@ -484,19 +484,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-slate-50">
+      <section className="bg-slate-50" data-no-reveal>
         <div className="mx-auto w-full max-w-7xl px-6 py-20">
-          <div className="text-center mb-16">
+          <article className="mb-16 text-center" style={{ transitionDelay: "40ms" }}>
             <h2 className="font-display text-3xl font-semibold text-slate-900 md:text-4xl">
               ¿Por qué elegir <span className="inline-block relative text-[#193356]">
                 RADIAST
                 <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-1 w-3/4 bg-[#0B56B8]"></span>
               </span>?
             </h2>
-          </div>
+          </article>
 
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            <div className="rounded-3xl bg-white p-6 shadow-sm border border-slate-100">
+            <article className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm" style={{ transitionDelay: "100ms" }}>
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#0B56B8]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="h-8 w-8">
@@ -508,9 +508,9 @@ export default function Home() {
                   Experiencia en automatización empresarial
                 </h3>
               </div>
-            </div>
+            </article>
 
-            <div className="rounded-3xl bg-white p-6 shadow-sm border border-slate-100">
+            <article className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm" style={{ transitionDelay: "180ms" }}>
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#0B56B8]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="h-8 w-8">
@@ -522,9 +522,9 @@ export default function Home() {
                   Integración tecnológica integral
                 </h3>
               </div>
-            </div>
+            </article>
 
-            <div className="rounded-3xl bg-white p-6 shadow-sm border border-slate-100">
+            <article className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm" style={{ transitionDelay: "260ms" }}>
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#0B56B8]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="h-8 w-8">
@@ -537,9 +537,9 @@ export default function Home() {
                   Enfoque estratégico B2B
                 </h3>
               </div>
-            </div>
+            </article>
 
-            <div className="rounded-3xl bg-white p-6 shadow-sm border border-slate-100">
+            <article className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm" style={{ transitionDelay: "340ms" }}>
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#0B56B8]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="h-8 w-8">
@@ -550,9 +550,9 @@ export default function Home() {
                   Implementaciones medibles
                 </h3>
               </div>
-            </div>
+            </article>
 
-            <div className="rounded-3xl bg-white p-6 shadow-sm border border-slate-100">
+            <article className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm" style={{ transitionDelay: "420ms" }}>
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#0B56B8]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="h-8 w-8">
@@ -563,7 +563,7 @@ export default function Home() {
                   Soporte continuo
                 </h3>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -710,9 +710,13 @@ export default function Home() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-10 md:grid-cols-4">
             <div className="space-y-4">
-              <div className="font-display text-xl font-semibold text-white">
-                RADIAST
-              </div>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="text-sm leading-6 text-slate-400">
                 Transformación Digital y Automatización Empresarial
               </p>

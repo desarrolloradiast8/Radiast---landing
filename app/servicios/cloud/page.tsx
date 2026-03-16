@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Header from "../../components/header";
 
 export const metadata: Metadata = {
@@ -18,15 +20,15 @@ export default function CloudPage() {
       <section className="bg-[#193864] text-white">
         <div className="mx-auto w-full max-w-440 px-6 py-2.5 md:px-10">
           <nav className="flex items-center gap-2 text-xs font-semibold md:text-sm">
-            <a className="hover:text-[#9dc6ff]" href="/">
+            <Link className="hover:text-[#9dc6ff]" href="/">
               Inicio
-            </a>
+            </Link>
             <span className="text-white/70">›</span>
             <a className="hover:text-[#9dc6ff]" href="/servicios">
               Servicios
             </a>
             <span className="text-white/70">›</span>
-            <span>Infraestructura Cloud Empresarial en Microsoft Azure</span>
+            <span>Infraestructura Cloud Empresarial</span>
           </nav>
         </div>
       </section>
@@ -46,9 +48,9 @@ export default function CloudPage() {
             <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-[#17356a] md:text-6xl">
               Infraestructura Cloud
               <br />
-              Empresarial en Microsoft Azure
+              Empresarial
             </h1>
-            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#17356a] md:text-xl md:leading-tight">
+            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-black md:text-xl md:leading-tight">
               Arquitectura cloud segura, escalable y preparada para crecimiento digital.
             </p>
           </div>
@@ -57,16 +59,101 @@ export default function CloudPage() {
 
       <section className="bg-[#e9eef5]">
         <div className="mx-auto w-full max-w-440 px-6 py-14 md:px-10 md:py-16">
-          <div className="mx-auto max-w-200">
-            <h2 className="text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
-              Sobre este servicio
-            </h2>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Diseñamos, implementamos y administramos infraestructura cloud empresarial en Microsoft Azure bajo estándares de seguridad avanzada, gobernanza y escalabilidad. Implementamos arquitecturas con VNet privadas, control de accesos (RBAC), cifrado de datos y entornos productivos seguros.
-            </p>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Preparamos la infraestructura para automatización, aplicaciones críticas y soluciones de inteligencia artificial empresarial.
-            </p>
+          <h2 className="mb-12 text-center text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
+            Sobre este servicio
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 7h18M6 3h12a3 3 0 013 3v8a3 3 0 01-3 3h-4l-2 4-2-4H6a3 3 0 01-3-3V6a3 3 0 013-3z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Diseño de arquitectura cloud empresarial
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Diseñamos infraestructuras en la nube adaptadas a las necesidades del negocio, asegurando una arquitectura tecnológica sólida, segura y preparada para el crecimiento.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 15a4 4 0 014-4h1a5 5 0 019.584 1.379A3.5 3.5 0 0118.5 19H8a4 4 0 01-4-4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 11v6m0 0l-3-3m3 3l3-3" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Implementación de infraestructura en Microsoft Azure
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Desplegamos entornos cloud utilizando servicios de Microsoft Azure, configurando recursos que permitan operar aplicaciones empresariales de forma eficiente y confiable.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 10l9-6 9 6-9 6-9-6z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 12v4a2 2 0 002 2h8a2 2 0 002-2v-4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 14h4" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Configuración de redes privadas y seguridad
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Implementamos arquitecturas con redes virtuales privadas (VNet) que permiten aislar y proteger los recursos tecnológicos dentro de la infraestructura cloud.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 11c1.657 0 3-1.79 3-4s-1.343-4-3-4-3 1.79-3 4 1.343 4 3 4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 21v-1a5 5 0 015-5h4a5 5 0 015 5v1" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 8h3m-1.5-1.5v3" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Gestión de accesos y control de permisos
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Aplicamos modelos de control de acceso basado en roles (RBAC) para garantizar que cada usuario o sistema tenga únicamente los permisos necesarios dentro de la plataforma.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 12.5l1.5 1.5 3.5-4" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Protección y cifrado de datos
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Implementamos mecanismos de seguridad y cifrado que protegen la información empresarial tanto en tránsito como en almacenamiento.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 17l4-4 4 4 8-8" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 9h6v6" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Infraestructura preparada para soluciones avanzadas
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Configuramos entornos cloud preparados para soportar automatización de procesos, aplicaciones críticas del negocio y futuras implementaciones de inteligencia artificial empresarial.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -193,7 +280,13 @@ export default function CloudPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -203,9 +296,9 @@ export default function CloudPage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">

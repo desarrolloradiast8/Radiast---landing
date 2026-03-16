@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Header from "../../components/header";
 
 export const metadata: Metadata = {
@@ -18,9 +20,9 @@ export default function IAPage() {
       <section className="bg-[#193864] text-white">
         <div className="mx-auto w-full max-w-440 px-6 py-2.5 md:px-10">
           <nav className="flex items-center gap-2 text-xs font-semibold md:text-sm">
-            <a className="hover:text-[#9dc6ff]" href="/">
+            <Link className="hover:text-[#9dc6ff]" href="/">
               Inicio
-            </a>
+            </Link>
             <span className="text-white/70">›</span>
             <a className="hover:text-[#9dc6ff]" href="/servicios">
               Servicios
@@ -50,7 +52,7 @@ export default function IAPage() {
               <br />
               Negocio
             </h1>
-            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#17356a] md:text-xl md:leading-tight">
+            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-black md:text-xl md:leading-tight">
               IA segura y estrategica para mejorar productividad y analisis empresarial.
             </p>
           </div>
@@ -59,13 +61,101 @@ export default function IAPage() {
 
       <section className="bg-[#e9eef5]">
         <div className="mx-auto w-full max-w-440 px-6 py-14 md:px-10 md:py-16">
-          <div className="mx-auto max-w-200">
-            <h2 className="text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
-              Sobre este servicio
-            </h2>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Implementamos soluciones de inteligencia artificial empresarial en entornos seguros, integrando modelos de IA, asistentes internos, automatizacion cognitiva y analisis predictivo. Aplicamos IA en procesos administrativos, financieros y operativos para mejorar eficiencia y toma de decisiones.
-            </p>
+          <h2 className="mb-12 text-center text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
+            Sobre este servicio
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5a2 2 0 002 2h2a2 2 0 002-2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Análisis de oportunidades para inteligencia artificial
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Evaluamos los procesos empresariales para identificar áreas donde la inteligencia artificial puede generar mejoras en eficiencia, automatización y análisis de información.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Diseño de soluciones de IA empresarial
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Definimos la arquitectura y estrategia de implementación de inteligencia artificial alineada con los objetivos operativos y estratégicos de la organización.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 16V8a2 2 0 012-2h6a2 2 0 012 2v8" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 16h14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h.01M12 12h.01M15 12h.01" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Integración de modelos de inteligencia artificial
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Implementamos modelos de IA que permiten analizar grandes volúmenes de datos, generar predicciones y apoyar la toma de decisiones empresariales.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-3 3v-3z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Desarrollo de asistentes inteligentes internos
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Creamos asistentes basados en inteligencia artificial que ayudan a automatizar consultas, gestión de información y soporte en procesos administrativos.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Automatización cognitiva de procesos
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Aplicamos inteligencia artificial para automatizar tareas que requieren análisis de información, interpretación de datos y toma de decisiones operativas.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 17l4-4 4 4 8-8" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 9h6v6" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Análisis predictivo para la toma de decisiones
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Utilizamos técnicas de análisis predictivo que permiten anticipar tendencias, optimizar la planificación empresarial y mejorar la estrategia del negocio basada en datos.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -192,7 +282,13 @@ export default function IAPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -202,9 +298,9 @@ export default function IAPage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">

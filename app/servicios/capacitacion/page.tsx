@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Header from "../../components/header";
 
 export const metadata: Metadata = {
@@ -18,9 +20,9 @@ export default function CapacitacionPage() {
       <section className="bg-[#193864] text-white">
         <div className="mx-auto w-full max-w-440 px-6 py-2.5 md:px-10">
           <nav className="flex items-center gap-2 text-xs font-semibold md:text-sm">
-            <a className="hover:text-[#9dc6ff]" href="/">
+            <Link className="hover:text-[#9dc6ff]" href="/">
               Inicio
-            </a>
+            </Link>
             <span className="text-white/70">›</span>
             <a className="hover:text-[#9dc6ff]" href="/servicios">
               Servicios
@@ -36,7 +38,7 @@ export default function CapacitacionPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=2200&q=80')",
+              "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=80')",
           }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(233,249,252,0.78)_0%,rgba(233,249,252,0.62)_34%,rgba(233,249,252,0.15)_68%,rgba(233,249,252,0.03)_100%)]" />
@@ -50,7 +52,7 @@ export default function CapacitacionPage() {
               <br />
               Tecnología
             </h1>
-            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#17356a] md:text-xl md:leading-tight">
+            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-black md:text-xl md:leading-tight">
               Formación estratégica en automatización, datos e inteligencia artificial.
             </p>
           </div>
@@ -59,13 +61,98 @@ export default function CapacitacionPage() {
 
       <section className="bg-[#e9eef5]">
         <div className="mx-auto w-full max-w-440 px-6 py-14 md:px-10 md:py-16">
-          <div className="mx-auto max-w-200">
-            <h2 className="text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
-              Sobre este servicio
-            </h2>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Diseñamos y ejecutamos programas de capacitación empresarial orientados a preparar equipos para la transformación digital. Formamos a profesionales en automatización de procesos, Business Intelligence, inteligencia artificial aplicada y herramientas tecnológicas estratégicas, con un enfoque práctico alineado a los objetivos reales del negocio.
-            </p>
+          <h2 className="mb-12 text-center text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
+            Sobre este servicio
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5a2 2 0 002 2h2a2 2 0 002-2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Diagnóstico de necesidades de capacitación
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Evaluamos las capacidades tecnológicas actuales del equipo para identificar las áreas donde la formación puede generar mayor impacto en la operación y estrategia del negocio.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Diseño de programas de formación empresarial
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Desarrollamos programas de capacitación adaptados a las necesidades de la organización, alineados con los objetivos de transformación digital de la empresa.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Capacitación en automatización de procesos
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Formamos a los equipos en el uso de herramientas y metodologías que permiten automatizar tareas operativas y optimizar procesos empresariales.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Formación en Business Intelligence y análisis de datos
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Entrenamos a profesionales en el uso de herramientas de análisis de datos y visualización para mejorar la interpretación de información y la toma de decisiones.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v4m0 8v4m8-8h-4M8 12H4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7.757 7.757l2.829 2.829m2.828 2.828l2.829 2.829m0-8.486l-2.829 2.829m-2.828 2.828l-2.829 2.829" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Aplicación empresarial de inteligencia artificial
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Capacitamos a los equipos en el uso estratégico de la inteligencia artificial para optimizar procesos administrativos, operativos y de gestión.
+              </p>
+            </article>
+
+            <article className="group rounded-lg bg-white p-8 shadow-sm transition duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100/80">
+              <div className="mb-4 flex justify-center">
+                <svg className="h-10 w-10 transition duration-300 ease-out group-hover:scale-110" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h8M8 12h8M8 17h5" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-center text-lg font-semibold text-[#193356]">
+                Enfoque práctico orientado al negocio
+              </h3>
+              <p className="text-center text-sm leading-relaxed text-slate-600">
+                Las capacitaciones se desarrollan con un enfoque aplicado a casos reales de la empresa, asegurando que el conocimiento adquirido pueda implementarse directamente en la operación diaria.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -172,7 +259,13 @@ export default function CapacitacionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -182,9 +275,9 @@ export default function CapacitacionPage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 interface HeaderProps {
@@ -30,7 +31,7 @@ export default function Header({ currentPage }: HeaderProps) {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
           <div className="flex h-10 items-center justify-center">
-            <a href="/">
+            <Link href="/">
               <Image
                 src="/icons/logo/logo-radiast-sinfondo.png"
                 alt="Radiast Logo"
@@ -38,34 +39,34 @@ export default function Header({ currentPage }: HeaderProps) {
                 height={40}
                 className="h-10 w-auto object-contain"
               />
-            </a>
+            </Link>
           </div>
         </div>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-[#193356] md:flex">
-          <a
+          <Link
             className={`transition hover:text-[#193356] ${
               currentPage === "inicio" ? "text-[#193356]" : ""
             }`}
             href="/"
           >
             Inicio
-          </a>
-          <a
+          </Link>
+          <Link
             className={`transition hover:text-[#193356] ${
               currentPage === "nosotros" ? "text-[#193356]" : ""
             }`}
             href="/nosotros"
           >
             Nosotros
-          </a>
+          </Link>
 
           <div
             className="relative"
             onMouseEnter={() => setIsServicesOpen(true)}
             onMouseLeave={() => setIsServicesOpen(false)}
           >
-            <a
+            <Link
               className={`flex items-center gap-1 transition hover:text-[#193356] ${
                 currentPage === "servicios" ? "text-[#193356]" : ""
               }`}
@@ -88,7 +89,7 @@ export default function Header({ currentPage }: HeaderProps) {
                   d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                 />
               </svg>
-            </a>
+            </Link>
 
             {isServicesOpen && (
               <div className="absolute -left-96 top-full z-50 pt-3">
@@ -96,24 +97,24 @@ export default function Header({ currentPage }: HeaderProps) {
                   <div className="grid grid-cols-2 gap-x-12 gap-y-3.5">
                     <div className="space-y-3.5">
                       {leftColumn.map((service) => (
-                        <a
+                        <Link
                           key={service.name}
                           href={service.href}
-                            className="block text-sm font-normal text-[#5b6b8d] transition hover:text-[#193356]"
+                          className="block text-sm font-normal text-[#5b6b8d] transition hover:text-[#193356]"
                         >
                           {service.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                     <div className="space-y-3.5">
                       {rightColumn.map((service) => (
-                        <a
+                        <Link
                           key={service.name}
                           href={service.href}
-                            className="block text-sm font-normal text-[#5b6b8d] transition hover:text-[#193356]"
+                          className="block text-sm font-normal text-[#5b6b8d] transition hover:text-[#193356]"
                         >
                           {service.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -122,14 +123,14 @@ export default function Header({ currentPage }: HeaderProps) {
             )}
           </div>
 
-          <a
+          <Link
             className={`transition hover:text-[#193356] ${
               currentPage === "contacto" ? "text-[#193356]" : ""
             }`}
             href="/contacto"
           >
             Contacto
-          </a>
+          </Link>
         </nav>
 
         <button className="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900 md:hidden">

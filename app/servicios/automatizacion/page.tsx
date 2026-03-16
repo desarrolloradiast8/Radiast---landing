@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Header from "../../components/header";
 
 export const metadata: Metadata = {
@@ -18,9 +20,9 @@ export default function AutomatizacionPage() {
       <section className="bg-[#193864] text-white">
         <div className="mx-auto w-full max-w-440 px-6 py-2.5 md:px-10">
           <nav className="flex items-center gap-2 text-xs font-semibold md:text-sm">
-            <a className="hover:text-[#9dc6ff]" href="/">
+            <Link className="hover:text-[#9dc6ff]" href="/">
               Inicio
-            </a>
+            </Link>
             <span className="text-white/70">›</span>
             <a className="hover:text-[#9dc6ff]" href="/servicios">
               Servicios
@@ -33,13 +35,13 @@ export default function AutomatizacionPage() {
 
       <section className="relative min-h-120 overflow-hidden md:min-h-130">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-bottom-right"
           style={{
             backgroundImage:
-              "url('/images/automatizacion-hero.jpg'), url('https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=2200&q=80')",
+              "url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(233,249,252,0.78)_0%,rgba(233,249,252,0.62)_34%,rgba(233,249,252,0.15)_68%,rgba(233,249,252,0.03)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(233,249,252,0.92)_0%,rgba(233,249,252,0.85)_30%,rgba(233,249,252,0.4)_65%,rgba(233,249,252,0.15)_100%)]" />
 
         <div className="relative mx-auto flex w-full max-w-440 items-center px-6 py-10 md:min-h-130 md:px-10 md:pl-14 md:py-14">
           <div className="max-w-3xl">
@@ -48,7 +50,7 @@ export default function AutomatizacionPage() {
               <br />
               Empresariales
             </h1>
-            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#17356a] md:text-xl md:leading-tight">
+            <p className="mt-5 max-w-4xl text-sm leading-relaxed text-black md:text-xl md:leading-tight">
               Reducimos costos operativos y eliminamos tareas manuales mediante automatización inteligente.
             </p>
           </div>
@@ -57,16 +59,95 @@ export default function AutomatizacionPage() {
 
       <section className="bg-[#e9eef5]">
         <div className="mx-auto w-full max-w-440 px-6 py-14 md:px-10 md:py-16">
-          <div className="mx-auto max-w-200">
-            <h2 className="text-xl font-semibold text-[#193356] md:text-3xl md:leading-none">
-              Sobre este servicio
-            </h2>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Implementamos soluciones de automatización de procesos empresariales, utilizando RPA (Robotic Process Automation) e Inteligencia Artificial aplicada. Integramos ERP, CRM, plataformas cloud y sistemas administrativos para eliminar tareas repetitivas, reducir errores humanos y mejorar tiempos de respuesta.
-            </p>
-            <p className="mt-7 text-sm leading-7 text-slate-900 md:text-[15px] md:leading-[1.55]">
-              Nuestro enfoque combina análisis de procesos, rediseño operativo y automatización estructurada para generar eficiencia empresarial medible.
-            </p>
+          <h2 className="text-center text-xl font-semibold text-[#193356] mb-12 md:text-3xl md:leading-none">
+            Sobre este servicio
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 [&>article]:transition [&>article]:duration-300 [&>article]:ease-out [&>article:hover]:-translate-y-2 [&>article:hover]:shadow-xl [&>article:hover]:shadow-sky-100/80">
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Análisis de procesos empresariales
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Evaluamos los procesos operativos actuales para identificar tareas repetitivas, cuellos de botella y oportunidades donde la automatización puede generar mayor eficiencia.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Diseño de soluciones de automatización
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Definimos la estrategia de automatización utilizando tecnologías como RPA e Inteligencia Artificial, alineando las soluciones con los objetivos operativos y estratégicos de la empresa.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Integración de sistemas empresariales
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Conectamos plataformas como ERP, CRM, sistemas administrativos y herramientas cloud para lograr un flujo de información continuo y automatizado entre las diferentes áreas del negocio.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Automatización de tareas repetitivas
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Implementamos bots y procesos automatizados que permiten eliminar tareas manuales, reducir errores humanos y mejorar los tiempos de respuesta operativa.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Rediseño y optimización de procesos
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Reestructuramos los procesos empresariales para que la automatización se implemente de manera eficiente, asegurando una operación más ágil y organizada.
+              </p>
+            </article>
+
+            <article className="rounded-lg bg-white p-8 shadow-sm">
+              <div className="mb-4 flex justify-center">
+                <svg className="w-10 h-10" fill="none" stroke="#0B56B8" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-lg font-semibold text-center text-[#193356]">
+                Medición de eficiencia y mejora continua
+              </h3>
+              <p className="text-sm leading-relaxed text-center text-slate-600">
+                Definimos indicadores que permitan medir el impacto de la automatización en productividad, reducción de errores y optimización de recursos, promoviendo una mejora continua basada en datos.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -203,7 +284,13 @@ export default function AutomatizacionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div>
-              <h3 className="text-xl font-bold tracking-wide">RADIAST</h3>
+              <Image
+                src="/icons/logo/logo-sin-fondo-2.png"
+                alt="Radiast"
+                width={220}
+                height={70}
+                className="h-12 w-auto object-contain"
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Transformación Digital y Automatización Empresarial
               </p>
@@ -242,9 +329,9 @@ export default function AutomatizacionPage() {
               <h4 className="font-semibold">Enlaces Rápidos</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
                 <li>
-                  <a href="/" className="transition hover:text-white">
+                  <Link href="/" className="transition hover:text-white">
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/nosotros" className="transition hover:text-white">
