@@ -111,7 +111,7 @@ export default function NosotrosPage() {
                 <Image src="/images/mision.png" alt="Nuestra Misión - RADIAST" width={500} height={400} className="w-full h-auto rounded-2xl" />
               </div>
 
-              <div className="grid gap-4 grid-cols-3">
+              <div className="cards-mobile-scroll flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory md:grid md:overflow-visible md:pb-0 md:snap-none md:grid-cols-3">
                 <div className="flex flex-col items-center gap-3 rounded-xl bg-white p-4 text-center shadow-sm border border-slate-200">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0B56B8" className="h-6 w-6">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -334,30 +334,40 @@ export default function NosotrosPage() {
             Clientes y <span className="text-[#193356]">Aliados</span>
           </h2>
 
-          <div className="mt-12 grid gap-4 md:grid-cols-6">
-            <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <Image src="/logos/ebu.png" alt="Logo EBU - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
-            </article>
+          <div className="cards-mobile-scroll mt-12 overflow-x-auto pb-4">
+            <div className="flex min-w-max gap-4 pr-2">
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/aceria.png" alt="Logo Aceria - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100" />
+              </article>
 
-            <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <Image src="/logos/nibol.png" alt="Logo NIBOL - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
-            </article>
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/business-kyla.png" alt="Logo Business Kyla - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100" />
+              </article>
 
-            <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <Image src="/logos/salus.png" alt="Logo SALUS - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
-            </article>
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/caballero.jpg" alt="Logo Caballero - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 scale-150" />
+              </article>
 
-            <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <Image src="/logos/guabira.png" alt="Logo GUABIRA - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
-            </article>
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/curtiembre-.png" alt="Logo Curtiembre - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100" />
+              </article>
 
-            <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <Image src="/logos/guabira2.png" alt="Logo GUABIRA 2 - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
-            </article>
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/genera-center.png" alt="Logo Genera Center - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100" />
+              </article>
 
-            <article className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40 min-h-[140px]">
-              <Image src="/logos/tata.png" alt="Logo TATA - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain" />
-            </article>
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/joddy.png" alt="Logo Joddy - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100" />
+              </article>
+
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/metalurgica prosermaco.png" alt="Logo Metalurgica Prosermaco - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 scale-150" />
+              </article>
+
+              <article className="flex min-h-35 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/40">
+                <Image src="/logos/nosotros/perbol.png" alt="Logo Perbol - Cliente Radiast" width={160} height={80} className="h-20 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100" />
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -393,8 +403,8 @@ export default function NosotrosPage() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-slate-500 font-medium">Teléfono</span>
-                  <a href="tel:+59178901234" className="text-base font-semibold text-[#2B3E7F] hover:underline">
-                    +591 789 01234
+                  <a href="tel:77802012" className="text-base font-semibold text-[#2B3E7F] hover:underline">
+                    77802012
                   </a>
                 </div>
               </div>
@@ -462,10 +472,26 @@ export default function NosotrosPage() {
             <div className="space-y-3">
               <div className="text-sm font-semibold text-white">Servicios</div>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li>Consultoría en Transformación Digital</li>
-                <li>Automatización de Procesos</li>
-                <li>Business Intelligence</li>
-                <li>Infraestructura Cloud</li>
+                <li>
+                  <Link className="transition hover:text-white" href="/servicios/consultoria">
+                    Consultoría en Transformación Digital
+                  </Link>
+                </li>
+                <li>
+                  <Link className="transition hover:text-white" href="/servicios/automatizacion">
+                    Automatización de Procesos
+                  </Link>
+                </li>
+                <li>
+                  <Link className="transition hover:text-white" href="/servicios/business-intelligence">
+                    Business Intelligence
+                  </Link>
+                </li>
+                <li>
+                  <Link className="transition hover:text-white" href="/servicios/cloud">
+                    Infraestructura Cloud
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -482,7 +508,7 @@ export default function NosotrosPage() {
                   <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
                     TEL
                   </span>
-                  <span>+591 789 01234</span>
+                  <span>77802012</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -491,6 +517,46 @@ export default function NosotrosPage() {
                   <span>contacto@radiast.com</span>
                 </li>
               </ul>
+              <div className="flex items-center gap-3 text-slate-400">
+                <a
+                  aria-label="Facebook de Radiast"
+                  className="transition hover:text-white"
+                  href="https://www.facebook.com/Radiast.Tecnologia.Integrada"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 22v-8H16l.5-3h-3V9.5c0-.9.3-1.5 1.6-1.5H17V5.2c-.4-.1-1.3-.2-2.5-.2-2.5 0-4 1.5-4 4.3V11H8v3h2.5v8h3z" />
+                  </svg>
+                </a>
+                <a
+                  aria-label="LinkedIn de Radiast"
+                  className="transition hover:text-white"
+                  href="https://www.linkedin.com/company/radiastechnology/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
+                    <path d="M8 10v7" stroke="currentColor" strokeLinecap="round" strokeWidth="2" />
+                    <circle cx="8" cy="7.5" r="1" fill="currentColor" />
+                    <path d="M12 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4" stroke="currentColor" strokeLinecap="round" strokeWidth="2" />
+                  </svg>
+                </a>
+                <a
+                  aria-label="Instagram de Radiast"
+                  className="transition hover:text-white"
+                  href="https://www.instagram.com/radiastechnology/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="2" />
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
+                    <circle cx="17" cy="7" r="1" fill="currentColor" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -502,3 +568,5 @@ export default function NosotrosPage() {
     </div>
   );
 }
+
+

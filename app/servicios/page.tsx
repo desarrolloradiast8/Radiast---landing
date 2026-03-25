@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import Header from "../components/header";
 
 export const metadata: Metadata = {
-  title: "Servicios - Transformacion Digital | Radiast",
+  title: "Servicios - Transformación Digital | Radiast",
   description:
-    "Servicios de consultoria, automatizacion, BI, integracion, desarrollo, cloud, IA, capacitacion y outsourcing tecnologico.",
+    "Servicios de consultoría, automatización, BI, integración, desarrollo, cloud, IA, capacitación y outsourcing tecnológico.",
   alternates: {
     canonical: "https://radiast.com/servicios",
   },
@@ -33,14 +33,14 @@ export default function ServiciosPage() {
               Servicios Tecnologicos para Empresas
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-100 md:text-2xl">
-              Automatizacion, BI, Cloud, IA y mas - soluciones integrales para transformar tu operacion empresarial.
+              Automatización, BI, Cloud, IA y más - soluciones integrales para transformar tu operación empresarial.
             </p>
             <div className="mt-8">
               <a
                 className="inline-flex items-center justify-center rounded-full bg-[#facc15] px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-[#facc15]/30 transition hover:-translate-y-px hover:bg-[#eab308]"
                 href="/contacto"
               >
-                Solicitar Diagnostico
+                Solicitar Diagnóstico
               </a>
             </div>
           </div>
@@ -53,14 +53,14 @@ export default function ServiciosPage() {
             Nuestros Servicios Tecnologicos
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-black">
-            Soluciones integrales de transformacion digital, automatizacion e inteligencia artificial para empresas.
+            Soluciones integrales de transformación digital, automatización e inteligencia artificial para empresas.
           </p>
         </div>
       </section>
 
       <section className="bg-white py-16" aria-labelledby="services-title">
         <div className="mx-auto w-full max-w-6xl px-6">
-          <div className="grid gap-6 md:grid-cols-3" role="list">
+          <div className="cards-mobile-scroll flex gap-5 overflow-x-auto pb-3 snap-x snap-mandatory md:grid md:gap-6 md:overflow-visible md:pb-0 md:snap-none md:grid-cols-3" role="list">
             <article className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm" role="listitem">
               <div className="flex items-start gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#0B56B8]">
@@ -69,7 +69,7 @@ export default function ServiciosPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900">Consultoria en Transformacion Digital</h3>
+                  <h3 className="text-sm font-semibold text-slate-900">Consultoría en Transformación Digital</h3>
                   <p className="mt-1 text-xs leading-5 text-slate-600">Disenamos estrategias tecnologicas para modernizar procesos y sentar las bases para una empresa digital.</p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function ServiciosPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900">Automatizacion de Procesos (RPA e IA)</h3>
+                  <h3 className="text-sm font-semibold text-slate-900">Automatización de Procesos (RPA e IA)</h3>
                   <p className="mt-1 text-xs leading-5 text-slate-600">Implementamos bots e inteligencia artificial para automatizar y ejecutar tareas repetitivas.</p>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function ServiciosPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900">Business Intelligence y Analitica</h3>
+                  <h3 className="text-sm font-semibold text-slate-900">Business Intelligence y Analítica</h3>
                   <p className="mt-1 text-xs leading-5 text-slate-600">Datos siempre disponibles y analisis para decisiones estrategicas basadas en informacion.</p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function ServiciosPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900">Integracion de Sistemas (IPaaS)</h3>
+                  <h3 className="text-sm font-semibold text-slate-900">Integración de Sistemas (IPaaS)</h3>
                   <p className="mt-1 text-xs leading-5 text-slate-600">Conectamos y sincronizamos multiples aplicaciones empresariales mediante un flujo de datos y procesos.</p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ export default function ServiciosPage() {
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold text-slate-900">Inteligencia Artificial Aplicada</h3>
-                  <p className="mt-1 text-xs leading-5 text-slate-600">Implementamos soluciones de IA para automatizacion inteligente y analisis avanzado.</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-600">Implementamos soluciones de IA para automatización inteligente y análisis avanzado.</p>
                 </div>
               </div>
             </article>
@@ -168,7 +168,7 @@ export default function ServiciosPage() {
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold text-slate-900">Capacitacion Empresarial</h3>
-                  <p className="mt-1 text-xs leading-5 text-slate-600">Formamos equipos en nuevas tecnologias y habilidades para la transformacion digital.</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-600">Formamos equipos en nuevas tecnologías y habilidades para la transformación digital.</p>
                 </div>
               </div>
             </article>
@@ -196,13 +196,13 @@ export default function ServiciosPage() {
 
         <div className="relative mx-auto max-w-5xl px-6">
           <h2 className="text-center font-display text-3xl font-semibold text-white md:text-4xl">
-            Tecnologia que potencia a tu empresa
+            Tecnología que potencia a tu empresa
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-slate-100 md:text-base">
             Cada solucion RADIAST esta orientada a generar resultados concretos y medibles para tu organizacion.
           </p>
 
-          <div className="mt-8 grid gap-8 md:grid-cols-3">
+          <div className="mt-8 cards-mobile-scroll flex gap-5 overflow-x-auto pb-3 snap-x snap-mandatory md:grid md:gap-8 md:overflow-visible md:pb-0 md:snap-none md:grid-cols-3">
             <div className="flex flex-col items-center text-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/90 bg-white/20 backdrop-blur-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="white" className="h-5 w-5">
@@ -270,8 +270,8 @@ export default function ServiciosPage() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-slate-500 font-medium">Teléfono</span>
-                  <a href="tel:+59178901234" className="text-base font-semibold text-[#193356] hover:underline">
-                    +591 789 01234
+                  <a href="tel:77802012" className="text-base font-semibold text-[#193356] hover:underline">
+                    77802012
                   </a>
                 </div>
               </div>
@@ -361,10 +361,26 @@ export default function ServiciosPage() {
             <div>
               <h4 className="font-semibold">Servicios</h4>
               <ul className="mt-4 space-y-3 text-sm text-slate-300">
-                <li>Consultoría en Transformación Digital</li>
-                <li>Automatización de Procesos</li>
-                <li>Business Intelligence</li>
-                <li>Infraestructura Cloud</li>
+                <li>
+                  <Link href="/servicios/consultoria" className="transition hover:text-white">
+                    Consultoría en Transformación Digital
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/servicios/automatizacion" className="transition hover:text-white">
+                    Automatización de Procesos
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/servicios/business-intelligence" className="transition hover:text-white">
+                    Business Intelligence
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/servicios/cloud" className="transition hover:text-white">
+                    Infraestructura Cloud
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -425,9 +441,49 @@ export default function ServiciosPage() {
                       d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                     />
                   </svg>
-                  <span>+591 789 01234</span>
+                  <span>77802012</span>
                 </li>
               </ul>
+              <div className="flex items-center gap-3 text-slate-300">
+                <a
+                  aria-label="Facebook de Radiast"
+                  className="transition hover:text-white"
+                  href="https://www.facebook.com/Radiast.Tecnologia.Integrada"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 22v-8H16l.5-3h-3V9.5c0-.9.3-1.5 1.6-1.5H17V5.2c-.4-.1-1.3-.2-2.5-.2-2.5 0-4 1.5-4 4.3V11H8v3h2.5v8h3z" />
+                  </svg>
+                </a>
+                <a
+                  aria-label="LinkedIn de Radiast"
+                  className="transition hover:text-white"
+                  href="https://www.linkedin.com/company/radiastechnology/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
+                    <path d="M8 10v7" stroke="currentColor" strokeLinecap="round" strokeWidth="2" />
+                    <circle cx="8" cy="7.5" r="1" fill="currentColor" />
+                    <path d="M12 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4" stroke="currentColor" strokeLinecap="round" strokeWidth="2" />
+                  </svg>
+                </a>
+                <a
+                  aria-label="Instagram de Radiast"
+                  className="transition hover:text-white"
+                  href="https://www.instagram.com/radiastechnology/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="2" />
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
+                    <circle cx="17" cy="7" r="1" fill="currentColor" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -439,3 +495,5 @@ export default function ServiciosPage() {
     </div>
   );
 }
+
+
